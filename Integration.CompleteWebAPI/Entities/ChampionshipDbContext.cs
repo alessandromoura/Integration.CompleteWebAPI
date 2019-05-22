@@ -62,26 +62,31 @@ namespace Integration.CompleteWebAPI.Entities
             modelBuilder.Entity<ChampionshipEntity>().HasData(
                 new ChampionshipEntity()
                 {
-                    Id = new Guid("0D5891D9-9997-4E87-8316-33CF9C55B154"),
+                    Id = Guid.Parse("0D5891D9-9997-4E87-8316-33CF9C55B154"),
                     FederationId = Guid.Parse("7B1E286E-6FAA-416A-8867-504DEC147C84"),
-                    Championship = "Campeonato Paulista de Futebol"
+                    Championship = "Campeonato Paulista de Futebol",
+                    Trophy = null
                 },
                 new ChampionshipEntity()
                 {
-                    Id = new Guid("581C69CB-F267-467C-8ADD-DDE491FCFEB7"),
+                    Id = Guid.Parse("581C69CB-F267-467C-8ADD-DDE491FCFEB7"),
                     FederationId = Guid.Parse("D597BC12-E5D6-4A68-93DF-EFA52E44ABB6"),
-                    Championship = "Brasileirao"                },
-                new ChampionshipEntity()
-                {
-                    Id = new Guid("ED31E62D-BE30-4588-8EEB-A072BDF37C25"),
-                    FederationId = Guid.Parse("C9496AF1-AC10-4E9F-8E7A-E92A49A2A337"),
-                    Championship = "Libertadores da America"
+                    Championship = "Brasileirao",
+                    Trophy = null
                 },
                 new ChampionshipEntity()
                 {
-                    Id = new Guid("8089FEC4-5072-44EF-A3C6-560822D09DB1"),
+                    Id = Guid.Parse("ED31E62D-BE30-4588-8EEB-A072BDF37C25"),
+                    FederationId = Guid.Parse("C9496AF1-AC10-4E9F-8E7A-E92A49A2A337"),
+                    Championship = "Libertadores da America",
+                    Trophy = null
+                },
+                new ChampionshipEntity()
+                {
+                    Id = Guid.Parse("8089FEC4-5072-44EF-A3C6-560822D09DB1"),
                     FederationId = Guid.Parse("601171DE-77AB-480D-A99D-054449E07FCF"),
-                    Championship = "Mundial de Clubes"
+                    Championship = "Mundial de Clubes",
+                    Trophy = null
                 }
             );
 
