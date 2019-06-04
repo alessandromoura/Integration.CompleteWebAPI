@@ -14,7 +14,7 @@ namespace Integration.CompleteWebAPI.Entities
         public Guid Id { get; set; }
         [Required]
         [MaxLength(250)]
-        public string Championship { get; set; }
+        public string Name { get; set; }
         public byte[] Trophy { get; set; }
 
         public Guid FederationId { get; set; }

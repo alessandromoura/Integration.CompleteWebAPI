@@ -26,25 +26,25 @@ namespace Integration.CompleteWebAPI.Entities
                 {
                     Id = Guid.Parse("7B1E286E-6FAA-416A-8867-504DEC147C84"),
                     Acronym = "FPF",
-                    Federation = "Federacao Paulista de Futebol"
+                    Name = "Federacao Paulista de Futebol"
                 },
                 new FederationEntity()
                 {
                     Id = Guid.Parse("D597BC12-E5D6-4A68-93DF-EFA52E44ABB6"),
                     Acronym = "CBF",
-                    Federation = "Confederacao Brasileira de Futebol"
+                    Name = "Confederacao Brasileira de Futebol"
                 },
                 new FederationEntity()
                 {
                     Id = Guid.Parse("601171DE-77AB-480D-A99D-054449E07FCF"),
                     Acronym = "FIFA",
-                    Federation = "Federation Internationale de Football Association"
+                    Name = "Federation Internationale de Football Association"
                 },
                 new FederationEntity()
                 {
                     Id = Guid.Parse("C9496AF1-AC10-4E9F-8E7A-E92A49A2A337"),
                     Acronym = "CONMEBOL",
-                    Federation = "Confederacion Sudamericana de Futbol"
+                    Name = "Confederacion Sudamericana de Futbol"
                 }
             );
 
@@ -64,33 +64,33 @@ namespace Integration.CompleteWebAPI.Entities
                 {
                     Id = Guid.Parse("0D5891D9-9997-4E87-8316-33CF9C55B154"),
                     FederationId = Guid.Parse("7B1E286E-6FAA-416A-8867-504DEC147C84"),
-                    Championship = "Campeonato Paulista de Futebol",
+                    Name = "Campeonato Paulista de Futebol",
                     Trophy = null
                 },
                 new ChampionshipEntity()
                 {
                     Id = Guid.Parse("581C69CB-F267-467C-8ADD-DDE491FCFEB7"),
                     FederationId = Guid.Parse("D597BC12-E5D6-4A68-93DF-EFA52E44ABB6"),
-                    Championship = "Brasileirao",
+                    Name = "Brasileirao",
                     Trophy = null
                 },
                 new ChampionshipEntity()
                 {
                     Id = Guid.Parse("ED31E62D-BE30-4588-8EEB-A072BDF37C25"),
                     FederationId = Guid.Parse("C9496AF1-AC10-4E9F-8E7A-E92A49A2A337"),
-                    Championship = "Libertadores da America",
+                    Name = "Libertadores da America",
                     Trophy = null
                 },
                 new ChampionshipEntity()
                 {
                     Id = Guid.Parse("8089FEC4-5072-44EF-A3C6-560822D09DB1"),
                     FederationId = Guid.Parse("601171DE-77AB-480D-A99D-054449E07FCF"),
-                    Championship = "Mundial de Clubes",
+                    Name = "Mundial de Clubes",
                     Trophy = null
                 }
             );
 
-            modelBuilder.Entity<TitleEntity>().HasData(
+            /*modelBuilder.Entity<TitleEntity>().HasData(
                 new TitleEntity()
                 {
                     Id = Guid.Parse("3C91388-07BD-451C-BF84-67707319D15D"),
@@ -123,7 +123,7 @@ namespace Integration.CompleteWebAPI.Entities
                     ChampionshipId = Guid.Parse("581C69CB-F267-467C-8ADD-DDE491FCFEB7"),
                     TeamId = Guid.Parse("0DDDE795-1460-43C0-A246-AE8168106F3F")
                 }
-            );
+            );*/
 
             base.OnModelCreating(modelBuilder);
         }

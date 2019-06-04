@@ -14,7 +14,7 @@ namespace Integration.CompleteWebAPI.Entities
         public Guid Id { get; set; }
         [Required]
         [MaxLength(250)]
-        public string Federation { get; set; }
+        public string Name { get; set; }
         [Required]
         [MaxLength(10)]
         public string Acronym { get; set; }
